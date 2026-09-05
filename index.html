@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WAWASAN IT | Professional Business IT Solutions Malaysia</title>
 <meta name="description" content="WAWASAN IT SDN BHD provides business computers, printing, cybersecurity, servers, networking, CCTV and corporate IT solutions in Malaysia since 2006.">
-<link rel="stylesheet" href="style.css?v=20260905-mobile2fix">
+<link rel="stylesheet" href="style.css?v=20260905-mobile-menu">
 <script defer src="script.js"></script>
 </head>
 <body>
@@ -27,6 +27,10 @@
     </nav>
     <a class="btn btn-gold" href="mailto:sales@wawasanit.com?subject=Request%20for%20Quotation%20-%20WAWASAN%20IT">Request a Quote</a>
   </div>
+
+<button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
 </header>
 
 <main>
@@ -203,5 +207,38 @@
   </div>
   <div class="shell copyright">© 2026 WAWASAN IT SDN BHD (741942-A). All rights reserved.</div>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  if (!toggle) return;
+
+  const candidates = [
+    document.querySelector('header nav'),
+    document.querySelector('.site-header nav'),
+    document.querySelector('.main-nav'),
+    document.querySelector('.nav-links')
+  ].filter(Boolean);
+
+  const nav = candidates[0];
+  if (!nav) return;
+
+  toggle.addEventListener('click', function () {
+    const open = nav.classList.toggle('mobile-open');
+    toggle.classList.toggle('active', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      nav.classList.remove('mobile-open');
+      toggle.classList.remove('active');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+    });
+  });
+});
+</script>
 </body>
 </html>
