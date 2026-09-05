@@ -9,3 +9,9 @@ Changes in this version:
 - Simon 012-605 0930 remains first/main WhatsApp contact; Alan 012-229 2382 remains second.
 
 Preview: unzip and drag the extracted folder into Netlify Drop.
+
+
+Final update:
+- Hero WIT office image re-composed so the full WIT logo is visible and aligned.
+- About office image cropped/re-aligned to remove the unwanted top laptop strip.
+- Homepage metrics updated to 20+ years, 1,500+ cybersecurity licences in a single project, 1,200+ laptops in a single project, and 100,000+ printers sold.

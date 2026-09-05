@@ -30,7 +30,7 @@ const counterObserver=new IntersectionObserver(entries=>{
     const tick=now=>{
       const p=Math.min((now-start)/duration,1);
       const value=Math.floor(target*(1-Math.pow(1-p,3)));
-      el.textContent=value.toLocaleString()+(target===20?'+':'');
+      el.textContent=value.toLocaleString()+(el.dataset.suffix||'');
       if(p<1) requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);

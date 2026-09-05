@@ -34,7 +34,7 @@ footer{background:#06172f;color:#b8c6d8;padding:54px 0 24px}.footer-grid{display
 .hero-bg{
   background:
     linear-gradient(90deg,rgba(244,249,255,.98) 0%,rgba(238,247,255,.94) 42%,rgba(226,241,255,.58) 63%,rgba(220,238,255,.14) 100%),
-    url("images/premium-hero.jpg") right center/58% 100% no-repeat;
+    url("images/premium-hero.jpg") right center/70% auto no-repeat;
 }
 .hero h1{color:var(--navy)}
 .hero p{color:#445b76}
@@ -68,7 +68,7 @@ footer{background:#06172f;color:#b8c6d8;padding:54px 0 24px}.footer-grid{display
 .about-photo{
   background:
     linear-gradient(rgba(19,74,135,.05),rgba(19,74,135,.05)),
-    url("images/premium-about.jpg") center/cover no-repeat;
+    url("images/premium-about.jpg") 52% center/cover no-repeat;
   min-height:470px;
 }
 .about-copy{padding:62px 56px;display:flex;flex-direction:column;justify-content:center}
