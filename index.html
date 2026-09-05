@@ -1,174 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>WAWASAN IT SDN BHD</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    .hero-section {
-      position: relative;
-      text-align: center;
-    }
-    .hero-section img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      display: block;
-      border-bottom: 4px solid #004080;
-      animation: fadeIn 1.2s ease-in;
-    }
-    .hero-overlay {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #004080;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 25px;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 16px;
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #0066cc;
-      transform: scale(1.05);
-    }
-    .content-section, .contact-section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      animation: fadeIn 1.4s ease;
-    }
-    h2 {
-      color: #004080;
-      animation: slideUp 1s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .footer-note {
-      text-align: left;
-      padding: 20px;
-      font-size: 13px;
-      color: #777;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WAWASAN IT | Professional Business IT Solutions Malaysia</title>
+<meta name="description" content="WAWASAN IT SDN BHD provides business computers, printing, cybersecurity, servers, networking, CCTV and corporate IT solutions in Malaysia since 2006.">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
 <body>
+<div class="progress" id="progress"></div>
 
-  <!-- Hero Banner -->
-<section class="hero-section">
-  <img src="images/hero-landing.png" alt="Wawasan IT Landing">
-  <div class="hero-button-overlay">
-    <a href="about.html" class="btn">Learn More ➤</a>
+<header class="header" id="header">
+  <div class="shell nav">
+    <a class="brand" href="index.html">
+      <img src="images/wawasan-icon.jpeg" alt="WAWASAN IT logo">
+      <span>WAWASAN IT<small>TECHNOLOGY · SOLUTIONS · RELIABILITY</small></span>
+    </a>
+    <nav class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#brands">Brands</a>
+      <a href="#experience">Experience</a>
+      <a href="about.html">About</a>
+      <a href="achievements.html">Achievements</a>
+    </nav>
+    <a class="btn btn-gold" href="mailto:sales@wawasanit.com?subject=Request%20for%20Quotation%20-%20WAWASAN%20IT">Request a Quote</a>
   </div>
-</section>
+</header>
 
-
-  <!-- Welcome Section -->
-  <section class="content-section">
-    <h2>Welcome to WAWASAN IT <img src="images/wawasan-icon.jpeg" alt="Wawasan Icon" style="height: 36px; margin-left: 12px;"></h2><a></a>
-</a></h2>
-    <p>We specialize in printer solutions and IT services. Established in 2006, we’ve become a trusted supplier of hardware, software, and corporate support — with strong partnerships in the printing industry.</p>
-    <div class="hero-overlay">
-      <a>
+<main>
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="shell hero-inner">
+    <div class="hero-copy reveal">
+      <div class="kicker">RELIABLE · PROFESSIONAL · FUTURE READY</div>
+      <h1>IT solutions that keep your <span>business moving.</span></h1>
+      <p>From workplace devices and printing to cybersecurity, servers, networking and surveillance, WAWASAN IT helps businesses choose, deploy and support the right technology.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="mailto:sales@wawasanit.com?subject=Request%20for%20Quotation%20-%20WAWASAN%20IT">Request a Quote</a>
+        <a class="btn btn-ghost" href="https://wa.me/60126050930?text=Hi%20WAWASAN%20IT%2C%20I%20would%20like%20to%20enquire%20about%20your%20IT%20products%20and%20solutions." target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <div class="trustline">Established 2006 · Petaling Jaya · Serving Malaysian businesses</div>
     </div>
-  </section>
 
-  <!-- IT Brand Partners -->
-<section class="content-section">
-  <h2>💼 Our Trusted IT Brand Partners</h2>
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; align-items: center; margin-top: 20px;">
-    <a href="https://wa.me/60126050930" target="_blank">
-      <img src="images/acer-icon.png" alt="Acer" style="width: 100px; object-fit: contain;">
-    </a>
-    <a href="https://wa.me/60126050930" target="_blank">
-      <img src="images/dell-icon.png" alt="Dell" style="width: 100px; object-fit: contain;">
-    </a>
-    <a href="https://wa.me/60126050930" target="_blank">
-      <img src="images/hp-icon.png" alt="HP" style="width: 100px; object-fit: contain;">
-    </a>
-    <a href="https://wa.me/60126050930" target="_blank">
-      <img src="images/lenovo-icon.png" alt="Lenovo" style="width: 100px; object-fit: contain;">
-    </a>
-    <a href="https://wa.me/60126050930" target="_blank">
-      <img src="images/canon-icon.png" alt="Canon" style="width: 100px; object-fit: contain;">
-    </a>
-    <a href="https://wa.me/60126050930" target="_blank">
-      <img src="images/brother-icon.png" alt="Brother" style="width: 100px; object-fit: contain;">
-    </a>
-    <a href="https://wa.me/60126050930" target="_blank">
-      <img src="images/epson-icon.png" alt="Epson" style="width: 100px; object-fit: contain;">
-    </a>
+    <div class="hero-panel reveal reveal-delay">
+      <div class="panel-glow"></div>
+      <div class="panel-label">WAWASAN IT</div>
+      <div class="panel-title">Business technology, delivered with confidence.</div>
+      <div class="panel-list">
+        <div><span>01</span> Corporate IT Supply</div>
+        <div><span>02</span> Cybersecurity</div>
+        <div><span>03</span> Infrastructure</div>
+        <div><span>04</span> Support & Deployment</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics">
+  <div class="shell metric-grid">
+    <div class="metric reveal"><strong class="counter" data-target="20">0</strong><span>Years of experience</span></div>
+    <div class="metric reveal"><strong class="counter" data-target="1500">0</strong><span>Avast Business Security licences supplied to a well-known listed company</span></div>
+    <div class="metric reveal"><strong class="counter" data-target="1200">0</strong><span>Laptops supplied for a major corporate project</span></div>
+    <div class="metric reveal"><strong>Multi-brand</strong><span>Flexible solutions across leading technology brands</span></div>
+  </div>
+</section>
+
+<section class="section" id="solutions">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div><div class="kicker dark">OUR SOLUTIONS</div><h2>Complete IT coverage for modern business.</h2></div>
+      <p>We bring together product sourcing, project coordination and practical technical support under one roof.</p>
+    </div>
+    <div class="solution-grid visual-solutions">
+      <article class="solution-card reveal">
+        <div class="solution-copy"><div class="icon">01</div><h3>Business Computing</h3><p>Laptops, desktops, workstations, monitors and accessories for productivity and fleet refresh.</p></div>
+        <img class="solution-visual" src="images/solution-computing.jpg" alt="Business laptops and computing">
+      </article>
+      <article class="solution-card reveal">
+        <div class="solution-copy"><div class="icon">02</div><h3>Printing &amp; Imaging</h3><p>Printers, MFPs, scanners, consumables and business print deployment.</p></div>
+        <img class="solution-visual" src="images/solution-printing.jpg" alt="Business printing and imaging">
+      </article>
+      <article class="solution-card reveal">
+        <div class="solution-copy"><div class="icon">03</div><h3>Cybersecurity</h3><p>Endpoint security, cloud management, firewall solutions and security reporting.</p></div>
+        <img class="solution-visual" src="images/solution-cybersecurity.jpg" alt="Cybersecurity protection">
+      </article>
+      <article class="solution-card reveal">
+        <div class="solution-copy"><div class="icon">04</div><h3>Servers &amp; Infrastructure</h3><p>Servers, storage, RAID, UPS, remote access and infrastructure planning.</p></div>
+        <img class="solution-visual" src="images/solution-infrastructure.jpg" alt="Servers and IT infrastructure">
+      </article>
+      <article class="solution-card reveal">
+        <div class="solution-copy"><div class="icon">05</div><h3>Networking &amp; CCTV</h3><p>Switching, wireless, firewall, surveillance and intelligent detection solutions.</p></div>
+        <img class="solution-visual" src="images/solution-network-cctv.jpg" alt="Networking and CCTV">
+      </article>
+      <article class="solution-card reveal">
+        <div class="solution-copy"><div class="icon">06</div><h3>Corporate IT Supply</h3><p>Project pricing, volume sourcing, staged delivery and after-sales coordination.</p></div>
+        <img class="solution-visual" src="images/solution-corporate-supply.jpg" alt="Corporate IT supply">
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section brand-section" id="brands">
+  <div class="shell">
+    <div class="section-head reveal">
+      <div><div class="kicker dark">TRUSTED TECHNOLOGY BRANDS</div><h2>Leading brands. Greater possibilities.</h2></div>
+      <p>A broad portfolio across computing, print, security, power, networking, storage and accessories.</p>
+    </div>
+    <div class="brand-grid reveal">
+      <div class="brand-tile"><img src="images/acer-icon.png" alt="Acer"></div>
+      <div class="brand-tile"><img src="images/dell-icon.png" alt="Dell"></div>
+      <div class="brand-tile"><img src="images/hp-icon.png" alt="HP"></div>
+      <div class="brand-tile"><img src="images/lenovo-icon.png" alt="Lenovo"></div>
+      <div class="brand-tile"><img src="images/canon-icon.png" alt="Canon"></div>
+      <div class="brand-tile"><img src="images/brother-icon.png" alt="Brother"></div>
+      <div class="brand-tile"><img src="images/epson-icon.png" alt="Epson"></div>
+      <div class="brand-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/1280px-ASUS_Logo.svg.png" alt="ASUS"></div>
+      <div class="brand-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Avast_Software_logo_2016.svg/1280px-Avast_Software_logo_2016.svg.png" alt="Avast"></div>
+      <div class="brand-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/APC-logo.svg/1280px-APC-logo.svg.png" alt="APC"></div>
+      <div class="brand-tile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft"></div>
+      <div class="brand-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/TPLINK_Logo_2.svg/1280px-TPLINK_Logo_2.svg.png" alt="TP-Link"></div>
+      <div class="brand-tile"><img src="https://brightstarcomp.com/cdn/shop/collections/sonicgear.png?v=1726800215" alt="SonicGear"></div>
+      <div class="brand-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Seagate-Logo.svg/1280px-Seagate-Logo.svg.png" alt="Seagate"></div>
+      <div class="brand-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Western_Digital_logo.svg/1280px-Western_Digital_logo.svg.png" alt="Western Digital"></div>
+      <div class="brand-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/SanDisk_2024_logo.svg/1280px-SanDisk_2024_logo.svg.png" alt="SanDisk"></div>
+      <div class="brand-tile"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Kingston_Technology_Corporation_logo.png" alt="Kingston Technology"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section why">
+  <div class="shell why-grid">
+    <div class="why-copy reveal">
+      <div class="kicker dark">WHY WAWASAN IT</div>
+      <h2>More than products. A partner for your growth.</h2>
+      <p>Our value comes from understanding both commercial requirements and practical IT implementation.</p>
+      <a class="text-link" href="about.html">Discover our company →</a>
+    </div>
+    <div class="why-cards">
+      <div class="why-card reveal"><b>01</b><h3>Wide Product Range</h3><p>Multi-brand IT products under one roof.</p></div>
+      <div class="why-card reveal"><b>02</b><h3>Competitive Sourcing</h3><p>Project pricing and volume procurement support.</p></div>
+      <div class="why-card reveal"><b>03</b><h3>Reliable Support</h3><p>Practical advice, deployment and after-sales assistance.</p></div>
+      <div class="why-card reveal"><b>04</b><h3>Corporate Experience</h3><p>Proven experience serving business and enterprise customers.</p></div>
+    </div>
   </div>
 </section>
 
 
-<!-- Contact Section -->
-<section class="contact-section">
-  <h2>📞 Contact Us</h2>
-  <p>🌐 Website: <a href="https://www.wawasanit.com" target="_blank">www.wawasanit.com</a></p>
-  <p>📍 Address: <a href="https://maps.google.com/?q=Lot%20No.2-08%20Second%20Floor%20Digital%20Mall%20No.%202%20Jalan%2014/20%20Seksyen%2014%20Petaling%20Jaya,%20Selangor,%2046100%20Malaysia" target="_blank">Lot No.2-08, 2nd Floor, Digital Mall, No. 2 Jalan 14/20, Seksyen 14, Petaling Jaya, Selangor, 46100, Malaysia</a><br>
-  <p>🕒 11am–9pm, Mon–Sun (Inluding Public Holiday)</p>
-  <p>📞 Office / Office Number: +603-79583878</p>
-  <p>👨‍💼 Simon: +6012-6050930 | Alan: +6012-2292382</p>
-  <p>📧 Email: <a href="mailto:sales@wawasanit.com">sales@wawasanit.com</a></p>
-</section>
-
-<!-- Online Stores & Payment -->
-<section class="contact-section">
-  <h2>🛒 Visit Our Online Stores</h2>
-  <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center; margin-bottom: 20px;">
-    <a href="https://shopee.com.my/wawasanit" target="_blank">
-      <img src="images/shopee-icon.png" alt="Shopee" style="width: 100px; object-fit: contain;">
-    </a>
-    <a href="https://www.lazada.com.my/shop/infinite-tech" target="_blank">
-      <img src="images/lazada-icon.png" alt="Lazada" style="width: 100px; object-fit: contain;">
-    </a>
-  </div>
-
-  <h2>💳 We Accept</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <img src="images/visa-icon.webp" alt="Visa" style="width: 60px;">
-    <img src="images/mastercard-icon.webp" alt="Mastercard" style="width: 60px;">
-    <img src="images/amex-icon.png" alt="AMEX" style="width: 60px;">
-    <img src="images/fpx-icon.png" alt="FPX" style="width: 60px;">
-    <img src="images/tng-icon.png" alt="TNG" style="width: 60px;">
-    <img src="images/grabpay-icon.png" alt="GrabPay" style="width: 60px;">
-    <img src="images/boost-icon.png" alt="Boost" style="width: 60px;">
-    <img src="images/mae-icon.png" alt="MAE" style="width: 60px; object-fit: contain;">
-    <img src="images/shopeepay-icon.png" alt="ShopeePay" style="width: 60px; object-fit: contain;">
+<section class="section about-visual">
+  <div class="shell about-visual-grid">
+    <div class="about-photo reveal"></div>
+    <div class="about-copy reveal">
+      <div class="kicker dark">ABOUT WAWASAN IT</div>
+      <h2>Your trusted IT partner since 2006.</h2>
+      <p>WAWASAN IT SDN BHD supports businesses with multi-brand technology products, project sourcing, practical deployment and dependable after-sales coordination.</p>
+      <div class="mini-points">
+        <span>Wide Product Range</span><span>Practical Advice</span><span>Reliable Support</span><span>Long-term Partnership</span>
+      </div>
+      <a class="btn btn-gold" href="about.html">Learn More About Us</a>
+    </div>
   </div>
 </section>
 
+<section class="section experience" id="experience">
+  <div class="shell">
+    <div class="section-head light reveal">
+      <div><div class="kicker">SELECTED EXPERIENCE</div><h2>Delivering real results.</h2></div>
+      <p>Representative projects that demonstrate sourcing capability, enterprise delivery and long-term brand relationships.</p>
+    </div>
+    <div class="experience-grid">
+      <article class="exp-card reveal"><div class="exp-number">1,500</div><h3>Avast Business Security licences</h3><p>Supplied to a well-known listed company for enterprise endpoint security.</p></article>
+      <article class="exp-card reveal"><div class="exp-number">1,200</div><h3>Laptops supplied</h3><p>Large-volume fulfilment for a major corporate project during a challenging supply period.</p></article>
+      <article class="exp-card reveal"><div class="exp-number">Top Partner</div><h3>Long-term channel recognition</h3><p>Recognitions across Canon and Brother reflect consistent channel performance.</p></article>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer-note">
-  <p style="display: flex; align-items: center; gap: 8px;">
-    <img src="images/wawasan-icon.jpeg" alt="Wawasan Icon" style="height: 20px;">
-    Copyright 2025 © WAWASAN IT SDN BHD (741942-A). All rights reserved.
-  </p>
+<section class="section contact" id="contact">
+  <div class="shell contact-wrap reveal">
+    <div>
+      <div class="kicker">LET'S WORK TOGETHER</div>
+      <h2>Talk to WAWASAN IT.</h2>
+      <p>Need a quotation, product recommendation or project discussion? Our team is ready to assist.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn-gold" href="mailto:sales@wawasanit.com?subject=Request%20for%20Quotation%20-%20WAWASAN%20IT">Email Us</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/60126050930?text=Hi%20WAWASAN%20IT%2C%20I%20would%20like%20to%20enquire%20about%20your%20IT%20products%20and%20solutions." target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn-ghost" href="tel:+60379583878">Call 03-7958 3878</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="shell footer-grid">
+    <div><div class="footer-brand">WAWASAN IT SDN BHD</div><p>Your trusted technology partner for business IT solutions since 2006.</p></div>
+    <div><h4>Quick Links</h4><a href="#solutions">Solutions</a><a href="#brands">Brands</a><a href="about.html">About Us</a><a href="achievements.html">Achievements</a></div>
+    <div><h4>Contact</h4><a href="tel:+60379583878">03-7958 3878</a><a href="https://wa.me/60126050930" target="_blank">012-605 0930 (Simon)</a><a href="https://wa.me/60126050930" target="_blank">012-229 2382 (Alan)</a><a href="mailto:sales@wawasanit.com">sales@wawasanit.com</a><span>Digital Mall, Petaling Jaya</span></div>
+    <div><h4>Business Hours</h4><span>11:00 AM – 9:00 PM</span><span>Monday – Sunday</span><span>Including Public Holidays</span></div>
+  </div>
+  <div class="shell copyright">© 2026 WAWASAN IT SDN BHD (741942-A). All rights reserved.</div>
 </footer>
-
-
 </body>
 </html>
-
