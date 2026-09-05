@@ -283,143 +283,143 @@ url("images/premium-contact.jpg") center/cover no-repeat!important;color:white!i
 }
 
 
-/* =========================================================
-   2026-09-05 MOBILE ONLY PATCH
-   Desktop styling above is intentionally unchanged.
-   Only fixes: (1) Home hero, (2) Home About section.
-   ========================================================= */
+/* ==========================================================
+   MOBILE EXACT 2-FIX PATCH — DESKTOP UNCHANGED
+   Only affects screens 767px and below.
+   1) Home hero
+   2) Home About section
+   ========================================================== */
 @media (max-width: 767px) {
-  /* FIX 1 — MOBILE HERO */
-  .hero,
-  .premium-hero,
-  .hero-section {
+
+  /* ---------- 1. HOME HERO ---------- */
+  .hero {
     min-height: auto !important;
     height: auto !important;
-    padding: 0 0 30px !important;
-    background-image: none !important;
-    background-color: #eef7ff !important;
+    display: block !important;
+    padding: 0 0 34px !important;
+    background: #eef7ff !important;
   }
 
-  .hero::before,
-  .premium-hero::before,
-  .hero-section::before {
+  .hero-bg {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: calc(100% - 28px) !important;
+    height: 205px !important;
+    margin: 16px 14px 0 !important;
+    border-radius: 16px !important;
+    background:
+      linear-gradient(rgba(255,255,255,.08), rgba(255,255,255,.08)),
+      url("images/premium-hero.jpg") 72% center / cover no-repeat !important;
+    box-shadow: 0 12px 30px rgba(8,31,66,.10) !important;
+  }
+
+  .hero-grid {
     display: none !important;
   }
 
-  .hero .container,
-  .premium-hero .container,
-  .hero-section .container {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-    max-width: none !important;
-    padding: 0 18px !important;
-  }
-
-  .hero .hero-copy,
-  .hero .hero-content,
-  .premium-hero .hero-copy,
-  .premium-hero .hero-content {
-    width: 100% !important;
-    max-width: none !important;
-    padding-top: 22px !important;
-  }
-
-  /* Dedicated mobile image; keeps the WIT office visible without
-     affecting the desktop background composition. */
-  .mobile-hero-image {
+  .hero-inner {
     display: block !important;
-    width: calc(100% - 36px) !important;
-    height: 205px !important;
-    margin: 18px 18px 0 !important;
-    border-radius: 16px !important;
-    background: url("images/premium-hero.jpg") 72% center / cover no-repeat !important;
-    box-shadow: 0 12px 30px rgba(8,31,66,.10);
+    min-height: auto !important;
+    width: min(100% - 32px, 1180px) !important;
+    margin: 0 auto !important;
+    padding: 22px 0 0 !important;
   }
 
-  .hero h1,
-  .premium-hero h1 {
-    font-size: clamp(40px, 11vw, 54px) !important;
+  .hero-copy {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .hero .kicker {
+    font-size: 10px !important;
+    line-height: 1.35 !important;
+    letter-spacing: .13em !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 11vw, 50px) !important;
     line-height: 1.02 !important;
-    letter-spacing: -1.6px !important;
-    margin: 14px 0 18px !important;
+    letter-spacing: -.045em !important;
+    margin: 15px 0 20px !important;
+    max-width: 100% !important;
   }
 
-  .hero p,
-  .premium-hero p {
+  .hero p {
     font-size: 17px !important;
     line-height: 1.55 !important;
     max-width: 100% !important;
   }
 
-  .hero-actions,
-  .hero .actions,
-  .premium-hero .actions {
+  .hero-actions {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 10px !important;
     width: 100% !important;
-    margin-top: 22px !important;
+    margin-top: 24px !important;
   }
 
-  .hero-actions .btn,
-  .hero .actions .btn,
-  .premium-hero .actions .btn {
+  .hero-actions .btn {
     width: 100% !important;
     min-height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
   }
 
-  .hero-panel,
-  .hero-card,
-  .premium-hero .glass-card {
+  .hero .trustline {
+    margin-top: 24px !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+  }
+
+  .hero-panel {
     display: none !important;
   }
 
-  /* FIX 2 — MOBILE ABOUT */
-  #about .about-grid,
-  .about-section .about-grid,
-  .about-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    grid-template-columns: 1fr !important;
-    gap: 22px !important;
+  /* ---------- 2. HOME ABOUT ---------- */
+  .about-visual {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
-  #about .about-visual,
-  .about-section .about-visual,
-  .about-visual {
+  .about-visual-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: min(100% - 28px, 1180px) !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+
+  .about-photo {
     width: 100% !important;
-    min-height: 220px !important;
+    min-height: 0 !important;
     height: 220px !important;
-    border-radius: 18px !important;
     background-position: 52% center !important;
     background-size: cover !important;
+    border-radius: 0 !important;
   }
 
-  #about .about-copy,
-  .about-section .about-copy,
   .about-copy {
     width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 !important;
+    padding: 30px 24px 34px !important;
   }
 
-  #about h2,
-  .about-section h2 {
+  .about-copy h2 {
     font-size: 34px !important;
     line-height: 1.08 !important;
-    letter-spacing: -1px !important;
+    letter-spacing: -.035em !important;
+    margin: 10px 0 16px !important;
   }
 
-  #about p,
-  .about-section p {
+  .about-copy p {
     font-size: 16px !important;
     line-height: 1.6 !important;
   }
-}
 
-@media (min-width: 768px) {
-  .mobile-hero-image { display: none !important; }
+  .mini-points {
+    grid-template-columns: 1fr !important;
+  }
 }
